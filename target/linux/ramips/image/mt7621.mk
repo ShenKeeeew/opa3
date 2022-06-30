@@ -140,6 +140,14 @@ define Device/afoundry_ew1200
 endef
 TARGET_DEVICES += afoundry_ew1200
 
+define Device/a3004ns
+  DTS := A3004NS
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := A3004NS
+  DEVICE_PACKAGES := kmod-usb3 kmod-usb-ledtrig-usbport
+endef
+TARGET_DEVICES += a3004ns
+
 define Device/alfa-network_quad-e4g
   $(Device/dsa-migration)
   IMAGE_SIZE := 16064k

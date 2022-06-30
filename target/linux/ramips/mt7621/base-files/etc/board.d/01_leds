@@ -23,6 +23,10 @@ d-team,newifi-d2)
 	ucidef_set_led_netdev "wlan2g" "WiFi 2.4GHz" "blue:wlan2g" "ra0"
 	ucidef_set_led_netdev "wlan5g" "WiFi 5GHz" "blue:wlan5g" "rai0"
 	;;
+a3004ns)
+	set_usb_led "$board:orange:usb"
+	ucidef_set_led_default "cpu" "CPU" "$board:orange:cpu" "1"
+	;;
 d-team,pbr-m1|\
 jcg,y2|\
 raisecom,msg1500-z-00|\
